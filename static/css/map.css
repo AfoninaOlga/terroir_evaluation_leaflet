@@ -1,0 +1,143 @@
+#map {
+    position: absolute;
+    bottom: 0;
+    top: 110px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+#prog-name {
+    width: auto;
+}
+
+@import url(//db.onlinewebfonts.com/c/0d78b12d6be09203d1fbeb76871a369a?family=Century+Gothic);
+
+@font-face {font-family: "Century Gothic";
+    src: url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.eot");
+    src: url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0d78b12d6be09203d1fbeb76871a369a.svg#Century Gothic") format("svg");
+}
+
+#map p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#head {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#prog-name {
+    margin-left: 30px;
+    margin-top: -5px;
+    font-weight: bold;
+    color: darkred;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+#icon {
+    max-height: 110px;
+}
+
+#icon img {
+    margin: 5px;
+    max-height: 100px;
+}
+
+.multiselect {
+    position: relative;
+    top: -30px;
+    left: 30px;
+    width: 200px;
+    z-index: 2;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    background: white;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes :checked {
+    color: darkred;
+}
+
+#checkboxes label:hover {
+    background-color: gray;
+    fill-opacity: 0.3;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+ul.grapes{
+    margin: 0;
+    padding-right: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-popup, .leaflet-popup-content-wrapper {
+    background: #424242;
+    color:#fff;
+    font-size:14px;
+    line-height:10px;
+    border-radius: 5px;
+    }
+
+.custom-popup, .leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.1);
+    }
+
+.custom-popup, .leaflet-popup-tip-container {
+    width:30px;
+    height:15px;
+    }
+
+.custom-popup, .leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    }

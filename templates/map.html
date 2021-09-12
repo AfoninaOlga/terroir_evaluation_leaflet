@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terroir Evaluation</title>
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+        <link rel="stylesheet" href="static/css/map.css"/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+             crossorigin="">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="head">
+            <div id="prog-name">
+                <h3>Terroir Evaluation</h3>
+            </div>
+            <div id="icon">
+                <img src="static/icon.png" class="ribbon"/>
+            </div>
+        </div>
+        <div id = "map"></div>
+        <div class="multiselect" id="options">
+            <div class="selectBox" onclick="showCheckboxes()">
+                <select>
+                    <option>Choose berry colour</option>
+                </select>
+                <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+                <label for="white">
+                    <input type="checkbox" name="color" id="white" />White</label>
+                <label for="pink">
+                    <input type="checkbox" name="color" id="pink" onclick="update_layer()"/>Pink</label>
+                <label for="red">
+                    <input type="checkbox" name="color" id="red" onclick="update_layer()"/>Red</label>
+                <label for="black">
+                    <input type="checkbox" name="color" id="black" onclick="update_layer()"/>Black</label>
+            </div>
+        </div>
+        <script src = "static/js/map2.js"></script>
+    </body>
+
+</html>
