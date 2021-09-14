@@ -34,13 +34,16 @@
                 <label for="white">
                     <input type="checkbox" name="color" id="white" />White</label>
                 <label for="pink">
-                    <input type="checkbox" name="color" id="pink" onclick="update_layer()"/>Pink</label>
+                    <input type="checkbox" name="color" id="pink" />Pink</label>
                 <label for="red">
-                    <input type="checkbox" name="color" id="red" onclick="update_layer()"/>Red</label>
+                    <input type="checkbox" name="color" id="red" />Red</label>
                 <label for="black">
-                    <input type="checkbox" name="color" id="black" onclick="update_layer()"/>Black</label>
+                    <input type="checkbox" name="color" id="black"/>Black</label>
             </div>
         </div>
+        <script>
+            let white_cantons= {{white_cantons}}, red_cantons= {{red_cantons}}, pink_cantons= {{pink_cantons}}, black_cantons= {{black_cantons}};
+        </script>
         <script src = "static/js/map2.js"></script>
     </body>
 
