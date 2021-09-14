@@ -2,51 +2,6 @@ var color_expanded = false;
 var clicked_id = 1;
 var is_white, is_red, is_pink, is_black = false;
 
-var white_cantons = [];
-$.getJSON({
-	url: window.location.href + 'filter/berry_color/white',
-	async: false,
-	success: function(data) {
-		$.each( data, function( key, val ) {
-			white_cantons.push(val.canton_id);
-		});
-	}
-});
-
-var red_cantons = [];
-$.getJSON({
-	url: window.location.href + 'filter/berry_color/red',
-	async: false,
-	success: function(data) {
-		$.each( data, function( key, val ) {
-			red_cantons.push(val.canton_id);
-			console.log("kek"+val.canton_id);
-		});
-	}
-});
-
-var pink_cantons = [];
-$.getJSON({
-	url: window.location.href + 'filter/berry_color/pink',
-	async: false,
-	success: function(data) {
-		$.each( data, function( key, val ) {
-			pink_cantons.push(val.canton_id);
-		});
-	}
-});
-
-var black_cantons = [];
-$.getJSON({
-	url: window.location.href + 'filter/berry_color/black',
-	async: false,
-	success: function(data) {
-		$.each( data, function( key, val ) {
-			black_cantons.push(val.canton_id);
-		});
-	}
-});
-
 const checkbox = document.getElementsByName('color')
 var i;
 for (i = 0; i<checkbox.length; i++) {
